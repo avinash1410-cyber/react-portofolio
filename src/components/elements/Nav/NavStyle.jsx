@@ -8,21 +8,24 @@ const Navigation = styled.div`
 const Wrapper = styled.nav`
   display: flex;
   flex-direction: column;
-  gap: 4.5rem;
-`;
-
-const LinkDiv = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
+  gap: 3.5rem;
 `;
 
 const Link = styled(routerLink)`
+  display: flex;
+  gap: 1rem;
+  align-items: center;
   text-decoration: none;
   color: var(--white);
   font-size: 1.8rem;
   font-weight: 300;
-  padding: 0.5rem 1rem 0.5rem 1rem;
+  padding: 1rem;
+  & > * {
+    pointer-events: none;
+  }
+  & > span {
+    font-weight: 500;
+  }
 `;
 
 const UnderLine = styled.span`
@@ -31,11 +34,10 @@ const UnderLine = styled.span`
   width: calc(100% + 2rem);
   height: 4rem;
   background-color: #ffffff3b;
-  left: 45%;
   border-radius: 5rem;
-  transform: translateX(-50%);
   transition: all 200ms ease;
-  top: ${({ offset }) => offset}px;
+  transform: translateX(-0.4rem);
+  top: ${({ offset }) => offset + 1}px;
 `;
 
-export { Link, Navigation, UnderLine, Wrapper, LinkDiv };
+export { Link, Navigation, UnderLine, Wrapper };
