@@ -10,6 +10,13 @@ const Wrapper = styled.nav`
   flex-direction: column;
   gap: 4.5rem;
 `;
+
+const LinkDiv = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+`;
+
 const Link = styled(routerLink)`
   text-decoration: none;
   color: var(--white);
@@ -21,14 +28,14 @@ const Link = styled(routerLink)`
 const UnderLine = styled.span`
   position: absolute;
   pointer-events: none;
-  width: 15rem;
+  width: calc(100% + 2rem);
   height: 4rem;
   background-color: #ffffff3b;
-  left: 50%;
+  left: 45%;
   border-radius: 5rem;
   transform: translateX(-50%);
   transition: all 200ms ease;
   top: ${({ offset }) => offset}px;
 `;
 
-export { Link, Navigation, UnderLine, Wrapper };
+export { Link, Navigation, UnderLine, Wrapper, LinkDiv };
