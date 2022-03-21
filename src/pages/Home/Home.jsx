@@ -5,13 +5,18 @@ import SocialIcon from '../../components/layouts/socialBar/socialBar';
 
 const Home = () => {
   return (
-    <Container>
+    <Container
+      key='page1'
+      initial={{ y: '5rem', opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      exit={{ y: '-5rem', opacity: 0 }}
+    >
       <div>
         <Avatar>
           <Image src={avatar} alt='' />
         </Avatar>
         <Text type='h1' size={3}>
-          Mostafa Kheibart
+          Hi im Mostafa👋🏻
         </Text>
         <Text weight={300} type='h2'>
           Front-end developer

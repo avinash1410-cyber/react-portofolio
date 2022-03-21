@@ -1,6 +1,7 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
-const Container = styled.div`
+const Container = styled(motion.section)`
   text-align: center;
   width: 100%;
   display: flex;
@@ -9,7 +10,7 @@ const Container = styled.div`
 `;
 
 const Avatar = styled.div`
-  margin:-10rem auto 2rem auto;
+  margin: -10rem auto 2rem auto;
   border-radius: 100%;
   padding: 1rem;
   box-shadow: 0 0 3rem #00000045;
