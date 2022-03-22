@@ -12,6 +12,7 @@ const Wrapper = styled.nav`
 `;
 
 const Link = styled(routerLink)`
+  position: relative;
   display: flex;
   gap: 1rem;
   align-items: center;
@@ -26,6 +27,7 @@ const Link = styled(routerLink)`
   & > span {
     font-weight: 500;
   }
+
 `;
 
 const UnderLine = styled.span`

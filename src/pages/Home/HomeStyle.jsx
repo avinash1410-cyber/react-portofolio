@@ -1,12 +1,12 @@
 import styled from 'styled-components';
-import { motion } from 'framer-motion';
 
-const Container = styled(motion.section)`
+const Container = styled.section`
   text-align: center;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 `;
 
 const Avatar = styled.div`
@@ -14,8 +14,8 @@ const Avatar = styled.div`
   border-radius: 100%;
   padding: 1rem;
   box-shadow: 0 0 3rem #00000045;
-  width: 20rem;
-  height: 20rem;
+  width: 22rem;
+  height: 22rem;
 `;
 const Image = styled.img`
   border-radius: 100%;

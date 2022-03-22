@@ -4,7 +4,7 @@ const IconBar = styled.div`
   margin-top:2rem ;
   display: flex;
   justify-content: center;
-  gap: 1.5rem;
+  gap: 2.5rem;
 `;
 
 const SocialIcon = styled.a`
