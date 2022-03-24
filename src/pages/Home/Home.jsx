@@ -1,17 +1,19 @@
-import { Image, Avatar, Container } from './HomeStyle';
-import { motion } from 'framer-motion';
+import { Image, Avatar,Content } from './HomeStyle';
 import Text from '../../components/shared/Text/Text';
 import avatar from '../../image/1.jpg';
 import SocialIcon from '../../components/layouts/socialBar/socialBar';
+import Container from '../../components/shared/Container/Container';
 
 const Home = () => {
   return (
     <Container
     >
-      <motion.div  key='page1'
-      initial={{ y: '5rem', opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      exit={{ y: '-5rem', opacity: 0 }}>
+      <Content 
+        key='page1'
+        initial={{ y: '5rem', opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        exit={{ y: '-5rem', opacity: 0 }}
+      >
         <Avatar>
           <Image src={avatar} alt='' />
         </Avatar>
@@ -22,7 +24,7 @@ const Home = () => {
           Front-end developer
         </Text>
         <SocialIcon />
-      </motion.div>
+      </Content>
     </Container>
   );
 };

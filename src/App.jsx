@@ -1,13 +1,13 @@
 import { Route, Routes, BrowserRouter } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 import { Home, About, Skills, Project, Contact } from './pages';
-import Container from './components/elements/Container/Container';
+import Body from './components/elements/Body/Body';
 import SideBar from './components/layouts/SideBar/SideBar';
 
 const App = () => {
   return (
     <BrowserRouter>
-      <Container>
+      <Body>
         <SideBar />
         <AnimatePresence>
           <Routes>
@@ -18,7 +18,7 @@ const App = () => {
             <Route path='contact' element={<Contact />} />
           </Routes>
         </AnimatePresence>
-      </Container>
+      </Body>
     </BrowserRouter>
   );
 };

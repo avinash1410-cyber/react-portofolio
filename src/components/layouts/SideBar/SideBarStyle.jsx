@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 const SideBarContainer = styled.aside`
+  position: fixed;
   display: flex;
   justify-content: start;
   align-items: center;

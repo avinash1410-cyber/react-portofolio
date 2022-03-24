@@ -1,13 +1,15 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
 const SkillWrapper = styled.div`
 display: flex;
-gap: 2rem;
+gap: 3rem;
 flex-wrap: wrap;
-padding: 5rem;
+padding: 4rem;
 `;
-const Container = styled.div`
-  padding: 15rem 10rem 10rem 10rem;
-`;  
 
-export {SkillWrapper,Container};
+const Content = styled(motion.div)`
+  padding: 15rem;
+`;
+
+export {SkillWrapper,Content};

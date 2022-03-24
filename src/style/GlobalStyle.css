@@ -9,6 +9,9 @@
 html{
   font-size: 10px;
 }
+p{
+  line-height: 2.8rem;
+}
 * {
   margin: 0;
   padding: 0;
