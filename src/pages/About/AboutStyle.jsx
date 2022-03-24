@@ -4,6 +4,7 @@ import styled from 'styled-components';
 const Head = styled.h4`
   padding-bottom:2.5rem;
   font-size:3rem;
+  font-weight: 500;
 `;
 const Content = styled(motion.div)`
   padding: 15rem;

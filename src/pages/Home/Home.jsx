@@ -1,7 +1,7 @@
 import { Image, Avatar,Content } from './HomeStyle';
 import Text from '../../components/shared/Text/Text';
 import avatar from '../../image/1.jpg';
-import SocialIcon from '../../components/layouts/socialBar/socialBar';
+import SocialIcon from '../../components/layouts/socialBar/SocialBar';
 import Container from '../../components/shared/Container/Container';
 
 const Home = () => {

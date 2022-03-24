@@ -1,21 +1,21 @@
-import { IconBar, SocialIcon } from './socialBarStyle';
+import { IconBar, SocialIcon } from './SocialBarStyle';
 const socialBar = () => {
   return (
     <IconBar>
       <SocialIcon
-        href='http://instagram.com'
+        href='https://www.instagram.com/mostafa.kheibary'
         className='fa-brands fa-instagram'
       ></SocialIcon>
       <SocialIcon
-        href='http://twitter.com'
+        href='https://twitter.com/MKheibary'
         className='fa-brands fa-twitter'
       ></SocialIcon>
       <SocialIcon
-        href='http://github.com'
+        href='https://github.com/mostafa-kheibary'
         className='fa-brands fa-github'
       ></SocialIcon>
       <SocialIcon
-        href='http://linkedin.com'
+        href='https://ir.linkedin.com/in/mostafa-kheibary'
         className='fa-brands fa-linkedin'
       ></SocialIcon>
     </IconBar>

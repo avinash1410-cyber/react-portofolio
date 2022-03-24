@@ -10,5 +10,6 @@ const SideBarContainer = styled.aside`
   padding: 4rem;
   box-shadow: 0 0 4rem #331c6345;
   background-color: var(--primary);
+  transition: all 200ms ease;
 `;
 export { SideBarContainer };

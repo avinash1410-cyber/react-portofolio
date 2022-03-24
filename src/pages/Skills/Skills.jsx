@@ -12,7 +12,7 @@ const Skills = () => {
   return (
   <Container>
   <Content initial={{y:'5rem',opacity:0}} animate={{y:0,opacity:1}} exit={{y:'-5rem',opacity:0}}>
-    <Text size={2} >Tolls that i use :</Text>
+    <Text type='h4' weight={500} size={3} >My Skills</Text>
     <SkillWrapper>
       {skills.current.map((skill)=>(
         <SkillCard key={skill} name={skill}/>

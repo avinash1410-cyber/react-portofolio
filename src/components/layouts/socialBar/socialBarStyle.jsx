@@ -14,5 +14,9 @@ const SocialIcon = styled.a`
   color: var(--white);
   padding: 0.8rem;
   border-radius: 100%;
+  transition: all 200ms ease;
+  &:hover{
+    transform: rotate(360deg);
+}
 `;
 export { IconBar, SocialIcon };
