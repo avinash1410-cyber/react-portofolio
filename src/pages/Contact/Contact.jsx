@@ -1,20 +1,31 @@
-import Container from "../../components/shared/Container/Container";
-import { Content } from "./ContactStyle";
-import Text from "../../components/shared/Text/Text";
-import SocialBar from "../../components/layouts/socialBar/SocialBar";
+import Container from '../../components/shared/Container/Container';
+import { Content } from './ContactStyle';
+import Text from '../../components/shared/Text/Text';
+import SocialBar from '../../components/layouts/SocialBar/SocialBar';
 const Contact = () => {
-  return(
+  return (
     <Container>
-      <Content>
-        <Text type='h4' size={2.5} weight='500'>Contact with Me </Text>
+      <Content
+        key='page4'
+        initial={{ y: '5rem', opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        exit={{ y: '-5rem', opacity: 0 }}
+      >
+        <Text type='h4' size={2.8} weight='500'>
+          Contact with Me{' '}
+        </Text>
         <ul>
-          <Text type='li' size={2}>phone Number : 09107584206</Text> 
-          <Text type='li' size={2}>Email : mostafa.kheibary@gmail.com</Text>
+          <Text type='li' size={1.8} weight={300}>
+            phone Number : 09107584206
+          </Text>
+          <Text type='li' size={1.8} weight={300}>
+            Email : mostafa.kheibary@gmail.com
+          </Text>
         </ul>
-        <SocialBar/> 
+        <SocialBar />
       </Content>
     </Container>
-  )
-}
+  );
+};
 
 export default Contact;

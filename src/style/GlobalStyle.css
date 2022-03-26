@@ -5,15 +5,15 @@
   --white: #ffffff;
   --black: #1a1a1a;
   --secoundry-black: #252525;
-  --light-color: rgba(10, 10, 220, .2);
+  --light-color: rgba(10, 10, 220, 0.2);
   --dark-color: rgba(10, 10, 220, 1);
   --radius: 64px;
   --ring-width: 4px;
 }
-html{
+html {
   font-size: 10px;
 }
-p{
+p {
   line-height: 2.8rem;
 }
 * {

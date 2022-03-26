@@ -1,14 +1,13 @@
-import { Image, Avatar,Content } from './HomeStyle';
+import { Image, Avatar, Content } from './HomeStyle';
 import Text from '../../components/shared/Text/Text';
-import avatar from '../../image/1.jpg';
-import SocialIcon from '../../components/layouts/socialBar/SocialBar';
+import avatar from '../../image/1.png';
+import SocialIcon from '../../components/layouts/SocialBar/SocialBar';
 import Container from '../../components/shared/Container/Container';
 
 const Home = () => {
   return (
-    <Container
-    >
-      <Content 
+    <Container>
+      <Content
         key='page1'
         initial={{ y: '5rem', opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
@@ -18,7 +17,7 @@ const Home = () => {
           <Image src={avatar} alt='' />
         </Avatar>
         <Text type='h1' size={3.5}>
-          Hi im Mostafa👋🏻
+          Hi im Mostafa <span className='shake'>👋🏻</span>
         </Text>
         <Text weight={300} type='h2' size={2}>
           Front-end developer
