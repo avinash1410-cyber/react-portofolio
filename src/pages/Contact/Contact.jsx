@@ -1,7 +1,7 @@
 import Container from '../../components/shared/Container/Container';
+import SocialBar from '../../components/layouts/SocialBar/SocialBar';
 import { Content } from './ContactStyle';
 import Text from '../../components/shared/Text/Text';
-import SocialBar from '../../components/layouts/SocialBar/SocialBar';
 
 const Contact = () => {
   return (
