@@ -1,6 +1,6 @@
 import { IconBar, SocialIcon } from './SocialBarStyle';
 
-const SocialBar = () => {
+const Icons = () => {
   return (
     <IconBar>
       <SocialIcon
@@ -23,4 +23,4 @@ const SocialBar = () => {
   );
 };
 
-export default SocialBar;
+export default Icons;

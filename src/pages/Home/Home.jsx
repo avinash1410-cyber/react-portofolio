@@ -1,8 +1,8 @@
 import { Image, Avatar, Content } from './HomeStyle';
 import Text from '../../components/shared/Text/Text';
 import avatar from '../../image/1.png';
-import SocialBar from '../../components/layouts/SocialBar/SocialBar';
 import Container from '../../components/shared/Container/Container';
+import Icons from '../../components/layouts/SocialBar/SocialBar';
 
 const Home = () => {
   return (
@@ -22,7 +22,7 @@ const Home = () => {
         <Text weight={300} type='h2' size={2}>
           Front-end developer
         </Text>
-        <SocialBar />
+        <Icons />
       </Content>
     </Container>
   );
