@@ -11,5 +11,9 @@ const SideBarContainer = styled.aside`
   box-shadow: 0 0 4rem #331c6345;
   background-color: var(--primary);
   transition: all 200ms ease;
+  @media screen and (max-width: 850px) {
+    position: absolute;
+    left: -100%;
+  }
 `;
 export { SideBarContainer };

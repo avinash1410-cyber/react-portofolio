@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import styled from 'styled-components';
 
 const Content = styled(motion.div)`
-position: relative;
+  position: relative;
   padding: 10rem 10rem 10rem 10rem;
   width: 100%;
 `;
@@ -29,5 +29,11 @@ const ProjectWrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(3,1fr);
   gap:2rem; 
+  @media screen and (max-width:1200px){
+    grid-template-columns:repeat(2,1fr) ;
+  }
+  @media screen and (max-width:1000px){
+    grid-template-columns:repeat(1,1fr) ;
+  }
 `;
 export {Content,ProjectCard,ProjectTitle,ProjectDes,ProjectWrapper};

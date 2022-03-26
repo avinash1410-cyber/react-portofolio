@@ -8,5 +8,9 @@ const Container = styled.section`
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  @media screen and (max-width: 850px) {
+    padding: 0;
+  }
 `;
+
 export default Container;

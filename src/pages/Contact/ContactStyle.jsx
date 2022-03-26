@@ -17,5 +17,9 @@ const Content = styled(motion.div)`
     flex-direction: column;
     gap: 1rem;
   }
+
+  @media screen and (max-width: 1000px) {
+    padding: 10rem;
+  }
 `;
 export { Content };

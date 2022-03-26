@@ -8,6 +8,9 @@ const Head = styled.h4`
 `;
 const Content = styled(motion.div)`
   padding: 15rem;
+  @media screen and (max-width:1100px){
+    padding:10rem ;
+  }
 `;
 
 export {Head,Content};

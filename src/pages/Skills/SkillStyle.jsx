@@ -10,6 +10,9 @@ const SkillWrapper = styled.div`
 
 const Content = styled(motion.div)`
   padding: 15rem;
+  @media screen and (max-width:1280px){
+    padding:10rem ;
+  }
 `;
 
 export {SkillWrapper,Content};
