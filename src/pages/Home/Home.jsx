@@ -1,7 +1,7 @@
 import { Image, Avatar, Content } from './HomeStyle';
 import Text from '../../components/shared/Text/Text';
 import avatar from '../../image/1.png';
-import SocialIcon from '../../components/layouts/SocialBar/SocialBar';
+import SocialBar from '../../components/layouts/SocialBar/SocialBar';
 import Container from '../../components/shared/Container/Container';
 
 const Home = () => {
@@ -22,7 +22,7 @@ const Home = () => {
         <Text weight={300} type='h2' size={2}>
           Front-end developer
         </Text>
-        <SocialIcon />
+        <SocialBar />
       </Content>
     </Container>
   );
