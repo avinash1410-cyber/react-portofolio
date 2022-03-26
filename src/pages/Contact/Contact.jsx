@@ -1,7 +1,7 @@
 import Container from '../../components/shared/Container/Container';
 import { Content } from './ContactStyle';
 import Text from '../../components/shared/Text/Text';
-import Icons from '../../components/layouts/SocialBar/SocialBar';
+// import Icons from '../../components/layouts/SocialBar/SocialBar';
 
 const Contact = () => {
   return (
@@ -23,7 +23,7 @@ const Contact = () => {
             Email : mostafa.kheibary@gmail.com
           </Text>
         </ul>
-        <Icons />
+        {/* <Icons /> */}
       </Content>
     </Container>
   );
