@@ -1,4 +1,5 @@
 import { IconBar, SocialIcon } from './SocialBarStyle';
+
 const socialBar = () => {
   return (
     <IconBar>

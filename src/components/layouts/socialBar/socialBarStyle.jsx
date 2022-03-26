@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const IconBar = styled.div`
-  margin-top:2rem ;
+  margin-top: 2rem;
   display: flex;
   justify-content: center;
   gap: 2.5rem;
@@ -15,8 +15,8 @@ const SocialIcon = styled.a`
   padding: 0.8rem;
   border-radius: 100%;
   transition: all 200ms ease;
-  &:hover{
+  &:hover {
     transform: rotate(360deg);
-}
+  }
 `;
 export { IconBar, SocialIcon };
