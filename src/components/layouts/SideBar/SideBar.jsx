@@ -5,10 +5,10 @@ import { SideBarContainer } from './SideBarStyle';
 import Nav from '../../elements/Nav/Nav';
 
 const SideBar = () => {
-  const { isOpen } = useContext(MenuContext);
+  const { isopen } = useContext(MenuContext);
 
   return (
-    <SideBarContainer isOpen={isOpen}>
+    <SideBarContainer isopen={isopen}>
       <Nav />
     </SideBarContainer>
   );

@@ -14,8 +14,9 @@ const HamMenu = styled(motion.div)`
   position: absolute;
   top: 1.5rem;
   z-index: 1000;
-  left: ${({ isOpen }) => (isOpen ? 'calc(100% - 6rem)' : '1.5rem')};
-  transform: ${({ isOpen }) => (isOpen ? 'rotateY(360deg)' : 'rotateY(0deg)')};
+  left: ${({ isopen }) => (isopen == 'true' ? 'calc(100% - 6rem)' : '1.5rem')};
+  transform: ${({ isopen }) =>
+    isopen == 'true' ? 'rotateY(360deg)' : 'rotateY(0deg)'};
   cursor: pointer;
   font-size: 1.5rem;
   transition: all 500ms ease;

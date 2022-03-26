@@ -14,7 +14,7 @@ const SideBarContainer = styled.aside`
   z-index: 1000;
   transition: all 500ms ease;
   @media screen and (max-width: 850px) {
-    left: ${({ isOpen }) => (isOpen ? 0 : '-100%')};
+    left: ${({ isopen }) => (isopen ? 0 : '-100%')};
   }
   @media screen and (max-width: 380px) {
     width: calc(100% - 8rem);

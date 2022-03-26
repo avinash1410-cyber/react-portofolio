@@ -4,12 +4,12 @@ import MenuContext from '../../../context/MenuContext';
 import { HamMenu } from './MenuButtonStyle';
 
 const MenuButton = () => {
-  const { setIsOpen, isOpen } = useContext(MenuContext);
+  const { setIsopen, isopen } = useContext(MenuContext);
   const handleOpen = () => {
-    setIsOpen(!isOpen);
+    setIsopen(!isopen);
   };
   return (
-    <HamMenu isOpen={isOpen} onClick={handleOpen}>
+    <HamMenu isopen={isopen.toString()} onClick={handleOpen}>
       <i className='fa-solid fa-bars'></i>
     </HamMenu>
   );

@@ -8,7 +8,7 @@ import Text from '../../shared/Text/Text';
 const Nav = () => {
   const [offset, setoffset] = useState();
   const allLinks = useRef();
-  const { setIsOpen } = useContext(MenuContext);
+  const { setIsopen } = useContext(MenuContext);
 
   useEffect(() => {
     // define all links in array
@@ -26,7 +26,7 @@ const Nav = () => {
   }, []);
   const handleClick = (e) => {
     // line.current.style.top = `${e.target.offsetTop }px`;
-    setIsOpen(false);
+    setIsopen(false);
     setoffset(e.target.offsetTop);
   };
   return (

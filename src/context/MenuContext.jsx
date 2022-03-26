@@ -3,13 +3,13 @@ import { createContext, useState } from 'react';
 const MenuContext = createContext();
 
 const MenuContextProvider = ({ children }) => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isopen, setIsopen] = useState(false);
 
   return (
     <MenuContext.Provider
       value={{
-        isOpen,
-        setIsOpen,
+        isopen,
+        setIsopen,
       }}
     >
       {children}
