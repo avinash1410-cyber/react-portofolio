@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import Container from '../../components/shared/Container/Container';
 import {
   Content,
@@ -14,6 +14,7 @@ const Project = () => {
   const [repos, setRepos] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
+  const isMount = useRef(true);
 
   useEffect(() => {
     const getRepo = async () => {
@@ -24,9 +25,10 @@ const Project = () => {
           'https://api.github.com/users/mostafa-kheibary/repos?type=public'
         );
         const data = await respone.json();
-        console.log(data);
-        setRepos(data.splice(11, 20));
-        setLoading(false);
+        if (isMount.current === true) {
+          setRepos(data.splice(11, 20));
+          setLoading(false);
+        }
       } catch (error) {
         setLoading(false);
         setError(true);
@@ -34,6 +36,9 @@ const Project = () => {
     };
 
     getRepo();
+    return () => {
+      isMount.current = false;
+    };
   }, []);
 
   const Projects = () => {
