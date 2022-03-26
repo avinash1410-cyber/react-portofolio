@@ -14,6 +14,14 @@ const Avatar = styled.div`
 const Content = styled(motion.div)`
   margin-top: 15rem;
   text-align: center;
+  @media screen and (max-width: 370px) {
+    & > h1 {
+      font-size: 2.5rem;
+    }
+    & > h2 {
+      font-size: 1.5rem;
+    }
+  }
 `;
 
 const Image = styled.img`

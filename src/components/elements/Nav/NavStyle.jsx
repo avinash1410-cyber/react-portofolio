@@ -27,7 +27,9 @@ const Link = styled(routerLink)`
   & > span {
     font-weight: 500;
   }
-
+@media screen and (max-width:350px){
+  font-size:1.5rem;
+}
 `;
 
 const UnderLine = styled.span`

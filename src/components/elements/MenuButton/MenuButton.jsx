@@ -8,7 +8,11 @@ const MenuButton = () => {
   const handleOpen = () => {
     setIsOpen(!isOpen);
   };
-  return <HamMenu isOpen={isOpen} onClick={handleOpen}>=</HamMenu>;
+  return (
+    <HamMenu isOpen={isOpen} onClick={handleOpen}>
+      <i className='fa-solid fa-bars'></i>
+    </HamMenu>
+  );
 };
 
 export default MenuButton;

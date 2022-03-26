@@ -3,8 +3,11 @@ import styled from 'styled-components';
 
 const Content = styled(motion.div)`
   position: relative;
-  padding: 10rem 10rem 10rem 10rem;
+  padding: 10rem;
   width: 100%;
+  @media screen and (max-width:600px){
+    padding:10rem 4rem 4rem 4rem;
+  }
 `;
 
 const ProjectCard = styled.div`
@@ -35,5 +38,6 @@ const ProjectWrapper = styled.div`
   @media screen and (max-width:1000px){
     grid-template-columns:repeat(1,1fr) ;
   }
+
 `;
 export {Content,ProjectCard,ProjectTitle,ProjectDes,ProjectWrapper};

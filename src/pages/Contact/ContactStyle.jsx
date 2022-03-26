@@ -17,9 +17,19 @@ const Content = styled(motion.div)`
     flex-direction: column;
     gap: 1rem;
   }
-
   @media screen and (max-width: 1000px) {
     padding: 10rem;
+  }
+  @media screen and (max-width: 465px) {
+    padding: 10rem 4rem 0rem 4rem;
+  }
+  @media screen and (max-width: 350px) {
+    & > ul li {
+      font-size: 1.5rem !important;
+    }
+    & > h4 {
+      font-size: 2rem;
+    }
   }
 `;
 export { Content };

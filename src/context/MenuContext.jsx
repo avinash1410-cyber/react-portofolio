@@ -12,7 +12,7 @@ const MenuContextProvider = ({ children }) => {
         setIsOpen,
       }}
     >
-      {children};
+      {children}
     </MenuContext.Provider>
   );
 };

@@ -10,13 +10,14 @@ const HamMenu = styled(motion.div)`
   border-radius: 50%;
   width: 4rem;
   height: 4rem;
+  box-shadow: 0 0 2rem #00000040;
   position: absolute;
   top: 1.5rem;
-  z-index:1000 ;
+  z-index: 1000;
   left: ${({ isOpen }) => (isOpen ? 'calc(100% - 6rem)' : '1.5rem')};
   transform: ${({ isOpen }) => (isOpen ? 'rotateY(360deg)' : 'rotateY(0deg)')};
   cursor: pointer;
-  font-size: 3rem;
+  font-size: 1.5rem;
   transition: all 500ms ease;
   @media screen and (min-width: 850px) {
     display: none;
