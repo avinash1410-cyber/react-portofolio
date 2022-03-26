@@ -1,4 +1,6 @@
-import { useEffect, useState, useRef } from 'react';
+import { useEffect, useState, useRef, useContext } from 'react';
+import MenuContext from '../../../context/MenuContext';
+
 import { Link, Navigation, UnderLine, Wrapper } from './NavStyle';
 import Icon from '../../shared/Icon/Icon';
 import Text from '../../shared/Text/Text';
@@ -6,6 +8,7 @@ import Text from '../../shared/Text/Text';
 const Nav = () => {
   const [offset, setoffset] = useState();
   const allLinks = useRef();
+  const { setIsOpen } = useContext(MenuContext);
 
   useEffect(() => {
     // define all links in array
@@ -23,6 +26,7 @@ const Nav = () => {
   }, []);
   const handleClick = (e) => {
     // line.current.style.top = `${e.target.offsetTop }px`;
+    setIsOpen(false);
     setoffset(e.target.offsetTop);
   };
   return (
