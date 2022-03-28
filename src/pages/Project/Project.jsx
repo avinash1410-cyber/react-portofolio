@@ -1,4 +1,5 @@
-import { useEffect, useState, useRef } from 'react';
+import { useRef } from 'react';
+
 import Container from '../../components/shared/Container/Container';
 import {
   Content,
@@ -7,59 +8,56 @@ import {
   ProjectTitle,
   ProjectWrapper,
   Link,
+  CardButtons,
+  ButtonLink,
 } from './ProjectStyle';
 import Text from '../../components/shared/Text/Text';
-import Loader from '../../components/elements/Loader/Loader';
+
 const Project = () => {
-  const [repos, setRepos] = useState([]);
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(false);
-  const isMount = useRef(true);
+  const projectData = useRef([
+    {
+      title: 'Todo App with React',
+      description:
+        'todo app created using by react and framer motion , local storage crud opration',
+      preview: 'https://festive-leavitt-059597.netlify.app/',
+      code: 'https://github.com/mostafa-kheibary/Todo-app-react',
+    },
+    {
+      title: 'Github User Finder',
+      description:
+        'find and view all user in github using github api and react , managing state with context and reducers',
+      code: 'https://github.com/mostafa-kheibary/githubFinder-react',
+      preview: 'https://peaceful-franklin-ca998c.netlify.app/',
+    },
+    {
+      title: 'Picture Finder',
+      description:
+        'find picture using unsplash API , managing state with context and reducers',
+      code: 'https://github.com/mostafa-kheibary/picsFinder-react',
+      preview:
+        'https://picture-finder-react-j2q7n91xh-mostafa-kheibary.vercel.app/',
+    },
+  ]);
 
-  useEffect(() => {
-    const getRepo = async () => {
-      try {
-        setError(false);
-        setLoading(true);
-        const respone = await fetch(
-          'https://api.github.com/users/mostafa-kheibary/repos?type=public'
-        );
-        const data = await respone.json();
-        if (isMount.current === true) {
-          setRepos(data.splice(11, 20));
-          setLoading(false);
-        }
-      } catch (error) {
-        setLoading(false);
-        setError(true);
-      }
-    };
-
-    getRepo();
-    return () => {
-      isMount.current = false;
-    };
-  }, []);
-
-  const Projects = () => {
-    return (
-      <>
-        <Text type='h4' size={3} weight={500}>
-          My Project
-        </Text>
-        <ProjectWrapper>
-          {repos.map((repo) => (
-            <ProjectCard key={repo.name}>
-              <ProjectTitle>{repo.name}</ProjectTitle>
-              <ProjectDes>{repo.description}</ProjectDes>
-            </ProjectCard>
-          ))}
-          <Link href='https://www.github.com/mostafa-kheibary?tab=repositories'>
-            {'More on Github >'}
-          </Link>
-        </ProjectWrapper>
-      </>
-    );
+  const renderdProjects = () => {
+    return projectData.current.map((pro) => {
+      return (
+        <ProjectCard key={pro.title}>
+          <ProjectTitle>{pro.title}</ProjectTitle>
+          <ProjectDes>{pro.description}</ProjectDes>
+          <CardButtons>
+            <ButtonLink
+              href={pro.code}
+              className='fa-solid fa-code'
+            ></ButtonLink>
+            <ButtonLink
+              href={pro.preview}
+              className='fa-solid fa-globe'
+            ></ButtonLink>
+          </CardButtons>
+        </ProjectCard>
+      );
+    });
   };
 
   return (
@@ -70,12 +68,15 @@ const Project = () => {
         animate={{ y: 0, opacity: 1 }}
         exit={{ y: '-5rem', opacity: 0 }}
       >
-        {loading ? <Loader /> : <Projects />}
-        {error && (
-          <Text type='p' size={2} weight={300}>
-            your internet have issus
-          </Text>
-        )}
+        <Text type='h4' size={3} weight={500}>
+          My Project
+        </Text>
+        <ProjectWrapper>
+          {renderdProjects()}
+          <Link href='https://www.github.com/mostafa-kheibary?tab=repositories'>
+            {'More on Github >'}
+          </Link>
+        </ProjectWrapper>
       </Content>
     </Container>
   );

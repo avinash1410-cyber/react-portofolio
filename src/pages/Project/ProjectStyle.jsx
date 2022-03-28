@@ -11,17 +11,18 @@ const Content = styled(motion.div)`
 `;
 
 const ProjectCard = styled.div`
-  border-radius: 1rem;
-  padding: 1rem;
+  border-radius: 0.8rem;
+  padding: 2rem;
   background-color: white;
   box-shadow: 0 0 2rem #0000001f;
   transition: all 200ms ease;
   &:hover {
-    transform: scale(1.1);
+    transform: scale(1.02);
   }
 `;
 const ProjectTitle = styled.h4`
-  font-size: 1.5rem;
+  font-size: 2rem;
+  margin-bottom: 1rem;
 `;
 const ProjectDes = styled.p`
   font-size: 1.4rem;
@@ -51,4 +52,33 @@ const Link = styled.a`
   font-size: 1.5rem;
 `;
 
-export { Content, ProjectCard, ProjectTitle, ProjectDes, ProjectWrapper, Link };
+const CardButtons = styled.div`
+  display: flex;
+  justify-content: end;
+  gap: 0.5rem;
+  margin-top: 1rem;
+`;
+const ButtonLink = styled.a`
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+  padding: 1rem;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: 50%;
+  &:hover {
+    background-color: #efefef;
+  }
+`;
+
+export {
+  Content,
+  ProjectCard,
+  ProjectTitle,
+  ProjectDes,
+  ProjectWrapper,
+  Link,
+  CardButtons,
+  ButtonLink,
+};
