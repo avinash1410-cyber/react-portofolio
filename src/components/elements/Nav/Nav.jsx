@@ -21,7 +21,9 @@ const Nav = () => {
     const Links = allLinks.current.children;
     if (Links[index] !== undefined) {
       // line.current.style.top = `${Links[index].offsetTop }px`;
-      setoffset(Links[index].offsetTop);
+      setTimeout(() => {
+        setoffset(Links[index].offsetTop);
+      },1);
     }
   }, []);
   const handleClick = (e) => {
