@@ -1,6 +1,6 @@
 import { Image, Avatar, Content } from "./HomeStyle";
 import Text from "../../components/shared/Text/Text";
-import avatar from "../../image/1.png";
+import avatar from '../../image/avatar.png';
 import Container from "../../components/shared/Container/Container";
 import Icons from "../../components/layouts/IconsBar/SocialBar";
 
