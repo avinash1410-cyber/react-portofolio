@@ -1,4 +1,4 @@
-import { Route, Routes, BrowserRouter } from 'react-router-dom';
+import { Route, Routes, BrowserRouter as Router } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 import { Home, About, Skills, Project, Contact } from './pages';
 import { MenuContextProvider } from './context/MenuContext';
@@ -8,7 +8,7 @@ import SideBar from './components/layouts/SideBar/SideBar';
 const App = () => {
   return (
     <MenuContextProvider>
-      <BrowserRouter>
+      <Router>
         <SideBar />
         <MenuButton />
         <AnimatePresence>
@@ -17,10 +17,10 @@ const App = () => {
             <Route path='/about' element={<About />} />
             <Route path='/project' element={<Project />} />
             <Route path='/skills' element={<Skills />} />
-            <Route path='contact' element={<Contact />} />
+            <Route path='/contact' element={<Contact />} />
           </Routes>
         </AnimatePresence>
-      </BrowserRouter>
+      </Router>
     </MenuContextProvider>
   );
 };
