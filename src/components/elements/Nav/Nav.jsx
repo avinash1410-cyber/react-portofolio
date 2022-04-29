@@ -1,6 +1,6 @@
 import { useEffect, useState, useRef, useContext } from 'react';
+import { useLocation } from 'react-router-dom';
 import MenuContext from '../../../context/MenuContext';
-
 import { Link, Navigation, UnderLine, Wrapper } from './NavStyle';
 import Icon from '../../shared/Icon/Icon';
 import Text from '../../shared/Text/Text';
@@ -8,8 +8,8 @@ import Text from '../../shared/Text/Text';
 const Nav = () => {
   const [offset, setoffset] = useState();
   const allLinks = useRef();
+  const location = useLocation();
   const { setIsopen } = useContext(MenuContext);
-
   useEffect(() => {
     // define all links in array
     const linkArray = ['/', '/about', '/skills', '/project', '/contact'];
@@ -23,9 +23,9 @@ const Nav = () => {
       // line.current.style.top = `${Links[index].offsetTop }px`;
       setTimeout(() => {
         setoffset(Links[index].offsetTop);
-      },1);
+      }, 1);
     }
-  }, []);
+  }, [location]);
   const handleClick = (e) => {
     // line.current.style.top = `${e.target.offsetTop }px`;
     setIsopen(false);
