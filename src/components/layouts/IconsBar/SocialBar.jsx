@@ -19,6 +19,10 @@ const Icons = () => {
         href='https://www.linkedin.com/in/avinash-kumar-9b14a8202/'
         className='fa-brands fa-linkedin'
       ></SocialIcon>
+     <SocialIcon
+        href='https://leetcode.com/avi8654340/'
+        className='fa-solid fa-code'
+      ></SocialIcon>
     </IconBar>
   );
 };
