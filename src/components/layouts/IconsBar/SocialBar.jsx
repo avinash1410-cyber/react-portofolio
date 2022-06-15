@@ -4,19 +4,19 @@ const Icons = () => {
   return (
     <IconBar>
       <SocialIcon
-        href='https://www.instagram.com/mostafa.kheibary'
+        href='https://www.instagram.com/avinashkumar1410/?hl=en'
         className='fa-brands fa-instagram'
       ></SocialIcon>
       <SocialIcon
-        href='https://twitter.com/MKheibary'
+        href='https://twitter.com/Avinash55899407'
         className='fa-brands fa-twitter'
       ></SocialIcon>
       <SocialIcon
-        href='https://github.com/mostafa-kheibary'
+        href='https://github.com/avinash1410-cyber'
         className='fa-brands fa-github'
       ></SocialIcon>
       <SocialIcon
-        href='https://ir.linkedin.com/in/mostafa-kheibary'
+        href='https://www.linkedin.com/in/avinash-kumar-9b14a8202/'
         className='fa-brands fa-linkedin'
       ></SocialIcon>
     </IconBar>

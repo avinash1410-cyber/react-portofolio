@@ -14,13 +14,13 @@ const Home = () => {
         exit={{ y: '-5rem', opacity: 0 }}
       >
         <Avatar>
-          <Image src={avatar} alt='mostafa kheibary picture' />
+          <Image src={avatar} alt='Avinash picture' />
         </Avatar>
         <Text type='h1' size={3.5}>
-          Hi im Mostafa <span role={'img'}>👋🏻</span>
+          Hi im Avinash <span role={'img'}>👋🏻</span>
         </Text>
         <Text weight={300} type='h2' size={2}>
-          Front-end developer
+          Full stack developer
         </Text>
         <Icons />
       </Content>

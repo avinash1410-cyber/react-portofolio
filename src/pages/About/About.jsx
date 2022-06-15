@@ -13,10 +13,8 @@ const About = () => {
       >
         <Head>About Me</Head>
         <Text size={2} weight={300} type='p'>
-          Hi I'm Mostafa and im 17 year old. I started programming 1 year ago as
-          Front-end developer and very quickly fell in love with it .and i
-          currently working in the internet industry. Skilled in React,
-          JavaScript, Css, Tailwind, Sass. also i Interest on ui/ux and i have
+          Hi I'm Avinash Kumar and im 22 year old pursuing B.tech degree form DTU with IT as Major. I started programming 1 year ago as
+          Full stack developer and very quickly fell in love with it . Django,java,python,React,Problem solving skills,SQL ,System design etc
           experience in Figma and Adobe xd.
         </Text>
       </Content>

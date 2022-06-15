@@ -16,26 +16,26 @@ import Text from '../../components/shared/Text/Text';
 const Project = () => {
   const projectData = useRef([
     {
-      title: 'Todo App with React',
+      title: 'Bolna social media web application',
       description:
-        'todo app created using by react and framer motion , local storage crud opration',
-      preview: 'https://festive-leavitt-059597.netlify.app/',
-      code: 'https://github.com/mostafa-kheibary/Todo-app-react',
+        'That is a kind of socila media web application in which you can chat to pepole on a certd=ain scpecifoc topics',
+        code: 'https://github.com/avinash1410-cyber/socialapp-BOLNA-',
+        preview: 'http://avinash8654340.pythonanywhere.com/',
     },
     {
-      title: 'Github User Finder',
+      title: 'Video chat application',
       description:
-        'find and view all user in github using github api and react , managing state with context and reducers',
-      code: 'https://github.com/mostafa-kheibary/githubFinder-react',
-      preview: 'https://peaceful-franklin-ca998c.netlify.app/',
+        'In this project two pepole can talk to each other with the controllling features aslo present in the Application',
+      code: 'https://github.com/avinash1410-cyber/VC',
+      preview: 'https://github.com/avinash1410-cyber/VC',
     },
     {
-      title: 'Picture Finder',
+      title: 'E-commerce API',
       description:
-        'find picture using unsplash API , managing state with context and reducers',
-      code: 'https://github.com/mostafa-kheibary/picsFinder-react',
+        'That is the backend API for a a e commerce web application wiht all modern features',
+      code: 'https://github.com/avinash1410-cyber/E-commerec-API',
       preview:
-        'https://picture-finder-react-j2q7n91xh-mostafa-kheibary.vercel.app/',
+        'https://github.com/avinash1410-cyber/E-commerec-API',
     },
   ]);
 
@@ -73,7 +73,7 @@ const Project = () => {
         </Text>
         <ProjectWrapper>
           {renderdProjects()}
-          <Link href='https://www.github.com/mostafa-kheibary?tab=repositories'>
+          <Link href='https://github.com/avinash1410-cyber?tab=repositories'>
             {'More on Github >'}
           </Link>
         </ProjectWrapper>

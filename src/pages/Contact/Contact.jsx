@@ -17,10 +17,10 @@ const Contact = () => {
         </Text>
         <ul>
           <Text type="li" size={1.8} weight={300}>
-            phone Number : 09107584206
+            phone Number : 7827303969
           </Text>
           <Text type="li" size={1.8} weight={300}>
-            Email : mostafa.kheibary@gmail.com
+            Email : avi8654340@gmail.com
           </Text>
         </ul>
         <Icons />

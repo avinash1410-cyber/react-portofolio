@@ -5,14 +5,14 @@ import Container from '../../components/shared/Container/Container';
 import Text from '../../components/shared/Text/Text';
 const Skills = () => {
   const skills = useRef([
-    'javaScript(ES6+)',
+    'Django',
     'React',
     'html',
     'css',
-    'styled-component',
-    'redux',
-    'tailwind',
-    'sass',
+    'Android development',
+    'Flutter',
+    'Problem solving skills',
+    'Java',
     'Git/Github',
   ]);
 
