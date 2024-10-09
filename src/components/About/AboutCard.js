@@ -8,13 +8,12 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am <span className="purple">Soumyajit Behera </span>
-            from <span className="purple"> Bhubaneswar, India.</span>
+            Hi Everyone, I am <span className="purple">Avinash Kumar </span>
+            from <span className="purple"> Delhi, India.</span>
             <br />
-            I am currently employed as a software developer at Juspay.
+            I am Passionate software developer Love work around the technical stuff.
             <br />
-            I have completed Integrated MSc (IMSc) in Maths and Computing at BIT
-            Mesra.
+            I have completed Bachelor of technology from Delhi technological Univesity.
             <br />
             <br />
             Apart from coding, some other activities that I love to do!
